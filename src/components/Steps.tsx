@@ -84,7 +84,7 @@ const Steps: React.FC = () => {
             <p className="text-lg mb-6 opacity-90">
               Junte-se a milhares de revendedores que já confiam na Click Car
             </p>
-            <button className="bg-white text-primary px-8 py-4 rounded-lg font-medium text-lg hover:bg-gray-100 transition-colors duration-300 hover:scale-105">
+            <button className="bg-white text-primary px-8 py-4 rounded-lg font-medium text-lg hover:bg-gray-100 transition-colors duration-300 hover:scale-105 cursor-pointer">
               Cadastre sua loja agora
             </button>
           </div>

@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
 import MoonWalkText from './MoonWalkText';
 
-const Header: React.FC = () => {
+interface HeaderProps {
+  onOpenModal?: () => void;
+}
+
+const Header: React.FC<HeaderProps> = ({ onOpenModal }) => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
   const toggleMenu = (): void => {
@@ -50,14 +54,17 @@ const Header: React.FC = () => {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <button className="btn-primary">
-              Anuncie Agora
-            </button>
+          <button 
+            onClick={onOpenModal}
+            className="btn-primary cursor-pointer"
+          >
+            Anuncie Agora
+          </button>
           </div>
 
           {/* Mobile Menu Button */}
           <button 
-            className="md:hidden p-2"
+            className="md:hidden p-2 cursor-pointer"
             onClick={toggleMenu}
             aria-label="Toggle menu"
           >
@@ -109,7 +116,10 @@ const Header: React.FC = () => {
                 Contato
               </a>
               <div className="px-4 pt-4">
-                <button className="btn-primary w-full">
+                <button 
+                  onClick={onOpenModal}
+                  className="btn-primary w-full cursor-pointer"
+                >
                   Anuncie Agora
                 </button>
               </div>

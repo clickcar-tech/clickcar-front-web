@@ -13,10 +13,10 @@ const CTA: React.FC = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <button className="bg-white text-primary px-8 py-4 rounded-lg font-medium text-lg hover:bg-gray-100 transition-colors duration-300 hover:scale-105 min-w-[250px]">
+            <button className="bg-white text-primary px-8 py-4 rounded-lg font-medium text-lg hover:bg-gray-100 transition-colors duration-300 hover:scale-105 min-w-[250px] cursor-pointer">
               Cadastre sua loja agora
             </button>
-            <button className="border-2 border-white text-white px-8 py-4 rounded-lg font-medium text-lg hover:bg-white hover:text-primary transition-colors duration-300 min-w-[200px]">
+            <button className="border-2 border-white text-white px-8 py-4 rounded-lg font-medium text-lg hover:bg-white hover:text-primary transition-colors duration-300 min-w-[200px] cursor-pointer">
               Falar com especialista
             </button>
           </div>
